@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
 
 //Version information
 def versionMajor = 0
@@ -50,6 +51,8 @@ android {
 }
 
 dependencies {
+  implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+
   // Android Support
   implementation "com.android.support:appcompat-v7:$rootProject.supportVersion"
   implementation "com.android.support:design:$rootProject.supportVersion"
